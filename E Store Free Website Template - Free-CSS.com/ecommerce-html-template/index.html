@@ -9,16 +9,6 @@
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-563HPFF3');</script>
         <!-- End Google Tag Manager -->
-
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3G25ZMFHQ3"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'G-3G25ZMFHQ3');
-        </script>
         
         <meta charset="utf-8">
         <title>E Store - eCommerce HTML Template</title>
@@ -42,7 +32,8 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
 
-    <body>
+    <!-- Page view -->
+    <body gtmName="home" gtmLocation="https://firgo12.github.io/Ecommerce-TreinoGA/E%20Store%20Free%20Website%20Template%20-%20Free-CSS.com/ecommerce-html-template/index.html" onload="getPageView()">
 
     <!-- Google Tag Manager (noscript) -->
         <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-563HPFF3"
@@ -149,28 +140,28 @@
                         <nav class="navbar bg-light">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-home"></i>Home</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-home" gtmEvAction="click:category" gtmEvLabel="home" onclick="getSelectContent()"></i>Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-shopping-bag"></i>Best Selling</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-shopping-bag" gtmEvAction="click:category" gtmEvLabel="best_selling" onclick="getSelectContent()"></i>Best Selling</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-plus-square"></i>New Arrivals</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-plus-square" gtmEvAction="click:category" gtmEvLabel="new_arrivals" onclick="getSelectContent()"></i>New Arrivals</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-female"></i>Fashion & Beauty</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-female" gtmEvAction="click:category" gtmEvLabel="fashion_&_beaury" onclick="getSelectContent()"></i>Fashion & Beauty</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-child"></i>Kids & Babies Clothes</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-child" gtmEvAction="click:category" gtmEvLabel="kids_&_babies_clothes" onclick="getSelectContent()"></i>Kids & Babies Clothes</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-tshirt"></i>Men & Women Clothes</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-tshirt" gtmEvAction="click:category" gtmEvLabel="men_&_women_clothes" onclick="getSelectContent()"></i>Men & Women Clothes</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-mobile-alt"></i>Gadgets & Accessories</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-mobile-alt" gtmEvAction="click:category" gtmEvLabel="gadgets_&_accessories" onclick="getSelectContent()"></i>Gadgets & Accessories</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#"><i class="fa fa-microchip"></i>Electronics & Accessories</a>
+                                    <a class="nav-link" href="#"><i class="fa fa-microchip" gtmEvAction="click:category" gtmEvLabel="eletronics_&_accessories" onclick="getSelectContent()"></i>Electronics & Accessories</a>
                                 </li>
                             </ul>
                         </nav>
@@ -181,21 +172,21 @@
                                 <img src="img/slider-1.jpg" alt="Slider Image" />
                                 <div class="header-slider-caption">
                                     <p>Some text goes here that describes the image</p>
-                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                    <a class="btn" href="" gtmEvAction="click:banner" gtmEvLabel="some_text_goes_here_that_describes_the_image" onclick="getSelectContent()"><i class="fa fa-shopping-cart"></i>Shop Now</a>
                                 </div>
                             </div>
                             <div class="header-slider-item">
                                 <img src="img/slider-2.jpg" alt="Slider Image" />
                                 <div class="header-slider-caption">
                                     <p>Some text goes here that describes the image</p>
-                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                    <a class="btn" href="" gtmEvAction="click:banner" gtmEvLabel="some_text_goes_here_that_describes_the_image" onclick="getSelectContent()"><i class="fa fa-shopping-cart"></i>Shop Now</a>
                                 </div>
                             </div>
                             <div class="header-slider-item">
                                 <img src="img/slider-3.jpg" alt="Slider Image" />
                                 <div class="header-slider-caption">
                                     <p>Some text goes here that describes the image</p>
-                                    <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Shop Now</a>
+                                    <a class="btn" href="" gtmEvAction="click:banner" gtmEvLabel="some_text_goes_here_that_describes_the_image" onclick="getSelectContent()"><i class="fa fa-shopping-cart"></i>Shop Now</a>
                                 </div>
                             </div>
                         </div>
@@ -204,13 +195,13 @@
                         <div class="header-img">
                             <div class="img-item">
                                 <img src="img/category-1.jpg" />
-                                <a class="img-text" href="">
+                                <a class="img-text" href="" gtmEvAction="click:banner" gtmEvLabel="some_text_goes_here_that_describes_the_image" onclick="getSelectContent()">
                                     <p>Some text goes here that describes the image</p>
                                 </a>
                             </div>
                             <div class="img-item">
                                 <img src="img/category-2.jpg" />
-                                <a class="img-text" href="">
+                                <a class="img-text" href="" gtmEvAction="click:banner" gtmEvLabel="some_text_goes_here_that_describes_the_image" onclick="getSelectContent()">
                                     <p>Some text goes here that describes the image</p>
                                 </a>
                             </div>
@@ -225,12 +216,12 @@
         <div class="brand">
             <div class="container-fluid">
                 <div class="brand-slider">
-                    <div class="brand-item"><img src="img/brand-1.png" alt=""></div>
-                    <div class="brand-item"><img src="img/brand-2.png" alt=""></div>
-                    <div class="brand-item"><img src="img/brand-3.png" alt=""></div>
-                    <div class="brand-item"><img src="img/brand-4.png" alt=""></div>
-                    <div class="brand-item"><img src="img/brand-5.png" alt=""></div>
-                    <div class="brand-item"><img src="img/brand-6.png" alt=""></div>
+                    <div class="brand-item"><img src="img/brand-1.png" alt="" gtmEvAction="click:banner" gtmEvLabel="some_text_goes_here_that_describes_the_image" onclick="getSelectContent()"></div>
+                    <div class="brand-item"><img src="img/brand-2.png" alt="" gtmEvAction="click:banner" gtmEvLabel="some_text_goes_here_that_describes_the_image" onclick="getSelectContent()"></div>
+                    <div class="brand-item"><img src="img/brand-3.png" alt="" gtmEvAction="click:banner" gtmEvLabel="some_text_goes_here_that_describes_the_image" onclick="getSelectContent()"></div>
+                    <div class="brand-item"><img src="img/brand-4.png" alt="" gtmEvAction="click:banner" gtmEvLabel="some_text_goes_here_that_describes_the_image" onclick="getSelectContent()"></div>
+                    <div class="brand-item"><img src="img/brand-5.png" alt="" gtmEvAction="click:banner" gtmEvLabel="some_text_goes_here_that_describes_the_image" onclick="getSelectContent()"></div>
+                    <div class="brand-item"><img src="img/brand-6.png" alt="" gtmEvAction="click:banner" gtmEvLabel="some_text_goes_here_that_describes_the_image" onclick="getSelectContent()"></div>
                 </div>
             </div>
         </div>
