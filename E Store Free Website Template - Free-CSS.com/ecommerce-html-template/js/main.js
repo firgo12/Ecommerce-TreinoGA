@@ -237,6 +237,24 @@
     });
 })(jQuery);
 
+//Parâmetros padrões
+function getDefaultParams() {
+
+    do {
+        // Gerar um valor aleatório com 3 caracteres (letras e números)
+        valor = Math.random().toString(36).substring(2, 5); // 36 base (alfabético + numérico) e pega 3 caracteres após o ponto decimal
+    } while (valoresGerados.has(valor)); // Verifica se o valor já foi gerado
+
+    // Adiciona o valor gerado ao conjunto
+    valoresGerados.add(valor);
+
+    window.data = window.dataLayer || [];
+                window.data.push({
+                    user_logged:  true,
+                    user_id: valor      
+                });
+}
+
 //Função do page view 
 function getPageView() {
     window.dataLayer = window.dataLayer || [];
