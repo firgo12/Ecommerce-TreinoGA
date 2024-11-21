@@ -289,14 +289,20 @@ function getLogIn() {
 }
 
 // Função do evento Select Content
-function getSelectContent() {
+function getSelectContent(element) {
+
+    const gtmEvAction = element.getAttribute('gtmEvAction');
+    const gtmEvLabel = element.getAttribute('gtmEvLabel');
+
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'select_content',
-        ev_action:  document.body.getAttribute('gtmEvAction'),
-        ev_label: document.body.getAttribute('gtmEvLabel')     
+        ev_action:  gtmEvAction,
+        ev_label: gtmEvLabel     
     });
 }
+
+//Função para pegar 
 
 // Função do evento view Item List
 function getViewItemList() {
