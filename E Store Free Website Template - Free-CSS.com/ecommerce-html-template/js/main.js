@@ -689,7 +689,7 @@ function getPurchase(){
     window.dataLayer.push({
         event: 'purchase',
         currency: 'BRL',
-        value: 100,
+        value: 100.00,
         transaction_id: Math.floor(Math.random() * 100).toString(),
         shipping: Math.floor(Math.random() * 100),
         ecommerce: {
@@ -750,3 +750,4 @@ btnOrder.addEventListener('click', function(event) {
         getPurchase();
     }
 });
+
