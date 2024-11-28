@@ -334,7 +334,7 @@ function getViewItemList() {
                     item_id: "sku_12345",
                     item_name: "product_1",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:black"
                 },
@@ -342,7 +342,7 @@ function getViewItemList() {
                     item_id: "sku_12346",
                     item_name: "product_2",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue"
                 },
@@ -350,7 +350,7 @@ function getViewItemList() {
                     item_id: "sku_12347",
                     item_name: "product_3",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue"
                 },
@@ -358,7 +358,7 @@ function getViewItemList() {
                     item_id: "sku_12348",
                     item_name: "product_4",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:red"
                 },
@@ -366,7 +366,7 @@ function getViewItemList() {
                     item_id: "sku_12349",
                     item_name: "product_5",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue"
                 },
@@ -374,7 +374,7 @@ function getViewItemList() {
                     item_id: "sku_12350",
                     item_name: "product_6",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:gray"
                 },
@@ -382,7 +382,7 @@ function getViewItemList() {
                     item_id: "sku_12351",
                     item_name: "product_7",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:black"
                 },
@@ -390,7 +390,7 @@ function getViewItemList() {
                     item_id: "sku_12352",
                     item_name: "product_8",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:black"
                 },
@@ -398,7 +398,7 @@ function getViewItemList() {
                     item_id: "sku_12353",
                     item_name: "product_9",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:gray"
                 },
@@ -436,13 +436,13 @@ function getAddCart() {
     window.dataLayer.push({
         event: 'add_to_cart',
         currency: 'BRL',
-        value: 99,
+        value: 99.00,
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
                     item_name: "Product name",
                     item_category: "clothes",
-                    price: 100,
+                    price: 100.00,
                     quantity: 1,
                     item_variant: "color:black:s"
                 }
@@ -457,13 +457,13 @@ function getRemoveCart() {
     window.dataLayer.push({
         event: 'remove_from_cart',
         currency: 'BRL',
-        value: 99,
+        value: 99.00,
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
                     item_name: "Product name",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:black:s"
                 }
@@ -478,13 +478,13 @@ function getViewCart() {
     window.dataLayer.push({
         event: "view_cart",
         currency: "BRL",
-        value: 100,
+        value: 100.00,
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
                     item_name: "product_1",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:black:s"
                 },
@@ -492,7 +492,7 @@ function getViewCart() {
                     item_id: "sku_12346",
                     item_name: "product_2",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue:xl"
                 },
@@ -500,7 +500,7 @@ function getViewCart() {
                     item_id: "sku_12347",
                     item_name: "product_3",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue:l"
                 },
@@ -508,7 +508,7 @@ function getViewCart() {
                     item_id: "sku_12348",
                     item_name: "product_4",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:red:m"
                 },
@@ -516,7 +516,7 @@ function getViewCart() {
                     item_id: "sku_12349",
                     item_name: "product_5",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue:s"
                 }
@@ -531,14 +531,14 @@ function getCheckout() {
     window.dataLayer.push({
         event: "begin_checkout",
         currency: "BRL",
-        value: 100,
+        value: 100.00,
         payment_type: "Paypal",
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
                     item_name: "product_1",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:black:s"
                 },
@@ -546,7 +546,7 @@ function getCheckout() {
                     item_id: "sku_12346",
                     item_name: "product_2",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue:xl"
                 },
@@ -554,7 +554,7 @@ function getCheckout() {
                     item_id: "sku_12347",
                     item_name: "product_3",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue:l"
                 },
@@ -562,7 +562,7 @@ function getCheckout() {
                     item_id: "sku_12348",
                     item_name: "product_4",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:red:m"
                 },
@@ -570,7 +570,7 @@ function getCheckout() {
                     item_id: "sku_12349",
                     item_name: "product_5",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue:s"
                 }
@@ -587,14 +587,14 @@ function getAddPaymentInfo(paymentType) {
         ev_action: 'click:payment_info:sucesso',
         ev_label: 'Enviado com sucesso',
         currency: 'BRL',
-        value: 99,
+        value: 99.00,
         payment_type: paymentType,
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
                     item_name: "Product name",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:black:s"
                 }
@@ -636,13 +636,13 @@ function getAddShippingInfo() {
         ev_action: 'click:shipping_info:sucesso',
         ev_label: 'Enviado com sucesso',
         currency: 'BRL',
-        value: 100,
+        value: 100.00,
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
                     item_name: "product_1",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:black:s"
                 },
@@ -650,7 +650,7 @@ function getAddShippingInfo() {
                     item_id: "sku_12346",
                     item_name: "product_2",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue:xl"
                 },
@@ -658,7 +658,7 @@ function getAddShippingInfo() {
                     item_id: "sku_12347",
                     item_name: "product_3",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue:l"
                 },
@@ -666,7 +666,7 @@ function getAddShippingInfo() {
                     item_id: "sku_12348",
                     item_name: "product_4",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:red:m"
                 },
@@ -674,7 +674,7 @@ function getAddShippingInfo() {
                     item_id: "sku_12349",
                     item_name: "product_5",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue:s"
                 }
@@ -697,7 +697,7 @@ function getPurchase(){
                     item_id: "sku_12345",
                     item_name: "product_1",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:black:s"
                 },
@@ -705,7 +705,7 @@ function getPurchase(){
                     item_id: "sku_12346",
                     item_name: "product_2",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue:xl"
                 },
@@ -713,7 +713,7 @@ function getPurchase(){
                     item_id: "sku_12347",
                     item_name: "product_3",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue:l"
                 },
@@ -721,7 +721,7 @@ function getPurchase(){
                     item_id: "sku_12348",
                     item_name: "product_4",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:red:m"
                 },
@@ -729,7 +729,7 @@ function getPurchase(){
                     item_id: "sku_12349",
                     item_name: "product_5",
                     item_category: "clothes",
-                    price: 99,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:blue:s"
                 }
