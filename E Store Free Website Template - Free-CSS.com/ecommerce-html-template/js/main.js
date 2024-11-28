@@ -478,7 +478,7 @@ function getViewCart() {
     window.dataLayer.push({
         event: "view_cart",
         currency: "BRL",
-        value: 100.00,
+        value: 495.00,
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
@@ -531,7 +531,7 @@ function getCheckout() {
     window.dataLayer.push({
         event: "begin_checkout",
         currency: "BRL",
-        value: 100.00,
+        value: 495.00,
         payment_type: "Paypal",
         ecommerce: {
             items: [{
@@ -636,7 +636,7 @@ function getAddShippingInfo() {
         ev_action: 'click:shipping_info:sucesso',
         ev_label: 'Enviado com sucesso',
         currency: 'BRL',
-        value: 100.00,
+        value: 495.00,
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
@@ -689,7 +689,7 @@ function getPurchase(){
     window.dataLayer.push({
         event: 'purchase',
         currency: 'BRL',
-        value: 100.00,
+        value: 495.00,
         transaction_id: Math.floor(Math.random() * 100).toString(),
         shipping: Math.floor(Math.random() * 100),
         ecommerce: {
