@@ -32,7 +32,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
 
-    <body gtmName="wishlist" gtmLocation="https://firgo12.github.io/Ecommerce-TreinoGA/E%20Store%20Free%20Website%20Template%20-%20Free-CSS.com/ecommerce-html-template/wishlist.html" onload="getPageView(); getDefaultParams()">
+    <body gtmName="wishlist" gtmLocation="https://firgo12.github.io/Ecommerce-TreinoGA/E%20Store%20Free%20Website%20Template%20-%20Free-CSS.com/ecommerce-html-template/wishlist.html" onload="getPageView(); getViewItemListWishlist() ;getDefaultParams()">
 
         <!-- Top bar Start -->
         <div class="top-bar">
@@ -105,17 +105,17 @@
                     </div>
                     <div class="col-md-6">
                         <div class="search">
-                            <input type="text" placeholder="Search">
-                            <button><i class="fa fa-search"></i></button>
+                            <input type="text" id="searchInput" placeholder="Search">
+                            <button onclick="getSearch()"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="user">
-                            <a href="wishlist.html" class="btn wishlist">
+                            <a href="wishlist.html" class="btn wishlist" gtmEvAction="click:button" gtmEvLabel="wishlist" onclick="getSelectContent(this)">
                                 <i class="fa fa-heart"></i>
                                 <span>(0)</span>
                             </a>
-                            <a href="cart.html" class="btn cart">
+                            <a href="cart.html" class="btn cart" gtmEvAction="click:button" gtmEvLabel="view_cart" onclick="getSelectContent(this)">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span>(0)</span>
                             </a>
@@ -172,7 +172,7 @@
                                                 </div>
                                             </td>
                                             <td><button class="btn-cart">Add to Cart</button></td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                            <td><button onclick="getRemoveWishlist()"><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -190,7 +190,7 @@
                                                 </div>
                                             </td>
                                             <td><button class="btn-cart">Add to Cart</button></td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                            <td><button onclick="getRemoveWishlist()"><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -208,7 +208,7 @@
                                                 </div>
                                             </td>
                                             <td><button class="btn-cart">Add to Cart</button></td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                            <td><button onclick="getRemoveWishlist()"><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -226,7 +226,7 @@
                                                 </div>
                                             </td>
                                             <td><button class="btn-cart">Add to Cart</button></td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                            <td><button onclick="getRemoveWishlist()"><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
@@ -244,7 +244,7 @@
                                                 </div>
                                             </td>
                                             <td><button class="btn-cart">Add to Cart</button></td>
-                                            <td><button><i class="fa fa-trash"></i></button></td>
+                                            <td><button onclick="getRemoveWishlist()"><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                     </tbody>
                                 </table>

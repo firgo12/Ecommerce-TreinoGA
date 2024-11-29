@@ -407,6 +407,58 @@ function getViewItemList() {
     });
 }
 
+function getViewItemListWishlist() {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: "view_item_list",
+        item_list_id: "1234321",
+        item_list_name: "wishlist",
+        ecommerce: {
+            items: [{
+                    item_id: "sku_12345",
+                    item_name: "product_1",
+                    item_category: "clothes",
+                    price: 99.00,
+                    quantity: 1,
+                    item_variant: "color:black"
+                },
+                {
+                    item_id: "sku_12346",
+                    item_name: "product_2",
+                    item_category: "clothes",
+                    price: 99.00,
+                    quantity: 1,
+                    item_variant: "color:blue"
+                },
+                {
+                    item_id: "sku_12347",
+                    item_name: "product_3",
+                    item_category: "clothes",
+                    price: 99.00,
+                    quantity: 1,
+                    item_variant: "color:blue"
+                },
+                {
+                    item_id: "sku_12348",
+                    item_name: "product_4",
+                    item_category: "clothes",
+                    price: 99.00,
+                    quantity: 1,
+                    item_variant: "color:red"
+                },
+                {
+                    item_id: "sku_12349",
+                    item_name: "product_5",
+                    item_category: "clothes",
+                    price: 99.00,
+                    quantity: 1,
+                    item_variant: "color:blue"
+                }
+            ]
+        }
+    });
+}
+
 //Função do evento view Item
 function getViewItem() {
     let name = document.getElementById('productName').querySelector('h2').textContent;
@@ -740,6 +792,7 @@ function getPurchase(){
 
 
 const btnOrder = document.getElementById('btn-order');
+const checkbox = document.getElementById('newaccount');
 
 btnOrder.addEventListener('click', function(event) {
     
@@ -749,5 +802,98 @@ btnOrder.addEventListener('click', function(event) {
     if(payment != undefined){
         getPurchase();
     }
+
+    if(checkbox.checked){
+        getSignUp();
+    }
 });
 
+//Função do evento pesquisa (GERAL)
+function getSearch() {
+    var searchTerm = document.getElementById('searchInput').value;
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: 'search',
+        search_term:  searchTerm,
+        search_type: '',     
+        search_price: ''
+    });
+
+}
+//Função do evento pesquisa (GERAL)
+function getSearch2() {
+    var searchTerm = document.getElementById("searchInput2").value;
+    
+    var shortBy = document.querySelector('.product-short .dropdown-menu .active')?.textContent || '';
+    
+    var priceRange = document.querySelector('.product-price-range .dropdown-menu .active')?.textContent || '';
+
+    if (priceRange !== '') {
+        // Remove o símbolo '$' e divide o valor em duas partes (min e max)
+        var priceRangeCleaned = priceRange.replace('$', '').split(' to ');
+    
+        // Extrai o primeiro número (minPrice) e converte para Number
+        var minPrice = Number(priceRangeCleaned[0]);
+    
+    } 
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: 'search',
+        search_term:  searchTerm,
+        search_type: shortBy,     
+        search_price: minPrice
+    });
+}
+
+function getSelectPromotion(){
+    var coupon = document.getElementById("coupon").value;
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: 'select_promotion',
+        promotion_name:  coupon,
+        promotion_id: 'CPN123',     
+    });
+}
+
+function getAddWishlist(){
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: 'add_to_wishlist',
+        currency: 'BRL',
+        value: 99.00,    
+        ecommerce: {
+            items: [{
+                    item_id: "sku_12345",
+                    item_name: "product_1",
+                    item_category: "clothes",
+                    price: 99.00,
+                    quantity: 1,
+                    item_variant: ""
+                }
+            ]
+        } 
+    });
+}
+
+function getRemoveWishlist(){
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+        event: 'remove_from_wishlist',
+        currency: 'BRL',
+        value: 99.00,    
+        ecommerce: {
+            items: [{
+                    item_id: "sku_12345",
+                    item_name: "product_1",
+                    item_category: "clothes",
+                    price: 99.00,
+                    quantity: 1,
+                    item_variant: ""
+                }
+            ]
+        } 
+    });
+}

@@ -105,17 +105,17 @@
                     </div>
                     <div class="col-md-6">
                         <div class="search">
-                            <input type="text" placeholder="Search">
-                            <button><i class="fa fa-search"></i></button>
+                            <input type="text" id="searchInput" placeholder="Search">
+                            <button onclick="getSearch()"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="user">
-                            <a href="wishlist.html" class="btn wishlist">
+                            <a href="wishlist.html" class="btn wishlist" gtmEvAction="click:button" gtmEvLabel="wishlist" onclick="getSelectContent(this)">
                                 <i class="fa fa-heart"></i>
                                 <span>(0)</span>
                             </a>
-                            <a href="cart.html" class="btn cart">
+                            <a href="cart.html" class="btn cart" gtmEvAction="click:button" gtmEvLabel="view_cart" onclick="getSelectContent(this)">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span>(0)</span>
                             </a>
@@ -256,8 +256,8 @@
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="coupon">
-                                        <input type="text" placeholder="Coupon Code">
-                                        <button>Apply Code</button>
+                                        <input type="text" id="coupon" placeholder="Coupon Code">
+                                        <button onclick="getSelectPromotion()">Apply Code</button>
                                     </div>
                                 </div>
                                 <div class="col-md-12">

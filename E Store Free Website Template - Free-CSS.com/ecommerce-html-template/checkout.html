@@ -105,17 +105,17 @@
                     </div>
                     <div class="col-md-6">
                         <div class="search">
-                            <input type="text" placeholder="Search">
-                            <button><i class="fa fa-search"></i></button>
+                            <input type="text" id="searchInput" placeholder="Search">
+                            <button onclick="getSearch()"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="user">
-                            <a href="wishlist.html" class="btn wishlist">
+                            <a href="wishlist.html" class="btn wishlist" gtmEvAction="click:button" gtmEvLabel="wishlist" onclick="getSelectContent(this)">
                                 <i class="fa fa-heart"></i>
                                 <span>(0)</span>
                             </a>
-                            <a href="cart.html" class="btn cart">
+                            <a href="cart.html" class="btn cart" gtmEvAction="click:button" gtmEvLabel="view_cart" onclick="getSelectContent(this)">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span>(0)</span>
                             </a>
@@ -190,14 +190,14 @@
                                     </div>
                                     <div class="col-md-12">
                                         <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="newaccount">
-                                            <label class="custom-control-label" for="newaccount">Create an account</label>
+                                            <input type="checkbox" class="custom-control-input" id="newaccount" gtmEvAction="click:checkbox" gtmEvLabel="Create an account" onclick="getSelectContent()">
+                                            <label class="custom-control-label" name="newaccount" for="newaccount">Create an account</label>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="shipto">
-                                            <label class="custom-control-label" for="shipto">Ship to different address</label>
+                                            <input type="checkbox" class="custom-control-input" id="shipto" gtmEvAction="click:checkbox" gtmEvLabel="Ship to different address" onclick="getSelectContent()">
+                                            <label class="custom-control-label" name="shipto" for="shipto">Ship to different address</label>
                                         </div>
                                     </div>
                                 </div>

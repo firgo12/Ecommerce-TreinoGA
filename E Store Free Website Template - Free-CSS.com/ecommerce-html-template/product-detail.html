@@ -105,17 +105,17 @@
                     </div>
                     <div class="col-md-6">
                         <div class="search">
-                            <input type="text" placeholder="Search">
-                            <button><i class="fa fa-search"></i></button>
+                            <input type="text" id="searchInput" placeholder="Search">
+                            <button onclick="getSearch()"><i class="fa fa-search"></i></button>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="user">
-                            <a href="wishlist.html" class="btn wishlist">
+                            <a href="wishlist.html" class="btn wishlist" gtmEvAction="click:button" gtmEvLabel="wishlist" onclick="getSelectContent(this)">
                                 <i class="fa fa-heart"></i>
                                 <span>(0)</span>
                             </a>
-                            <a href="cart.html" class="btn cart">
+                            <a href="cart.html" class="btn cart" gtmEvAction="click:button" gtmEvLabel="view_cart" onclick="getSelectContent(this)">
                                 <i class="fa fa-shopping-cart"></i>
                                 <span>(0)</span>
                             </a>
@@ -308,8 +308,8 @@
                                                 <img src="img/product-10.jpg" alt="Product Image">
                                             </a>
                                             <div class="product-action">
-                                                <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                                <a href="#" onclick="getAddCart()"><i class="fa fa-cart-plus"></i></a>
+                                                <a href="#" onclick="getAddWishlist()"><i class="fa fa-heart"></i></a>
                                                 <a href="#"><i class="fa fa-search"></i></a>
                                             </div>
                                         </div>
@@ -336,8 +336,8 @@
                                                 <img src="img/product-8.jpg" alt="Product Image">
                                             </a>
                                             <div class="product-action">
-                                                <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                                <a href="#" onclick="getAddCart()"><i class="fa fa-cart-plus"></i></a>
+                                                <a href="#" onclick="getAddWishlist()"><i class="fa fa-heart"></i></a>
                                                 <a href="#"><i class="fa fa-search"></i></a>
                                             </div>
                                         </div>
@@ -364,8 +364,8 @@
                                                 <img src="img/product-6.jpg" alt="Product Image">
                                             </a>
                                             <div class="product-action">
-                                                <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                                <a href="#" onclick="getAddCart()"><i class="fa fa-cart-plus"></i></a>
+                                                <a href="#" onclick="getAddWishlist()"><i class="fa fa-heart"></i></a>
                                                 <a href="#"><i class="fa fa-search"></i></a>
                                             </div>
                                         </div>
@@ -392,8 +392,8 @@
                                                 <img src="img/product-4.jpg" alt="Product Image">
                                             </a>
                                             <div class="product-action">
-                                                <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                                <a href="#" onclick="getAddCart()"><i class="fa fa-cart-plus"></i></a>
+                                                <a href="#" onclick="getAddWishlist()"><i class="fa fa-heart"></i></a>
                                                 <a href="#"><i class="fa fa-search"></i></a>
                                             </div>
                                         </div>
@@ -420,8 +420,8 @@
                                                 <img src="img/product-2.jpg" alt="Product Image">
                                             </a>
                                             <div class="product-action">
-                                                <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                                <a href="#"><i class="fa fa-heart"></i></a>
+                                                <a href="#" onclick="getAddCart()"><i class="fa fa-cart-plus"></i></a>
+                                                <a href="#" onclick="getAddWishlist()"><i class="fa fa-heart"></i></a>
                                                 <a href="#"><i class="fa fa-search"></i></a>
                                             </div>
                                         </div>
@@ -478,8 +478,8 @@
                                             <img src="img/product-7.jpg" alt="Product Image">
                                         </a>
                                         <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#" onclick="getAddCart()"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#" onclick="getAddWishlist()"><i class="fa fa-heart"></i></a>
                                             <a href="#"><i class="fa fa-search"></i></a>
                                         </div>
                                     </div>
@@ -504,8 +504,8 @@
                                             <img src="img/product-8.jpg" alt="Product Image">
                                         </a>
                                         <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#" onclick="getAddCart()"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#" onclick="getAddWishlist()"><i class="fa fa-heart"></i></a>
                                             <a href="#"><i class="fa fa-search"></i></a>
                                         </div>
                                     </div>
@@ -530,8 +530,8 @@
                                             <img src="img/product-9.jpg" alt="Product Image">
                                         </a>
                                         <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#" onclick="getAddCart()"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#" onclick="getAddWishlist()"><i class="fa fa-heart"></i></a>
                                             <a href="#"><i class="fa fa-search"></i></a>
                                         </div>
                                     </div>
