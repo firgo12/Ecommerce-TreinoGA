@@ -324,6 +324,7 @@ function getSelectContent(element) {
 
 // Função do evento view Item List
 function getViewItemList() {
+    window.dataLayer.push({ ecommerce: null });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: "view_item_list",
@@ -408,6 +409,7 @@ function getViewItemList() {
 }
 
 function getViewItemListWishlist() {
+    window.dataLayer.push({ ecommerce: null });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: "view_item_list",
@@ -463,6 +465,7 @@ function getViewItemListWishlist() {
 function getViewItem() {
     let name = document.getElementById('productName').querySelector('h2').textContent;
 
+    window.dataLayer.push({ ecommerce: null });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'view_item',
@@ -484,6 +487,7 @@ function getViewItem() {
 
 //Função do evento add to cart
 function getAddCart() {
+    window.dataLayer.push({ ecommerce: null });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'add_to_cart',
@@ -505,6 +509,7 @@ function getAddCart() {
 
 //Função do evento remove from cart
 function getRemoveCart() {
+    window.dataLayer.push({ ecommerce: null });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'remove_from_cart',
@@ -526,6 +531,7 @@ function getRemoveCart() {
 
 //Função do evento view cart
 function getViewCart() {
+    window.dataLayer.push({ ecommerce: null });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: "view_cart",
@@ -580,6 +586,7 @@ function getViewCart() {
 //Função do evento checkout
 function getCheckout() {
     window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ ecommerce: null });
     window.dataLayer.push({
         event: "begin_checkout",
         currency: "BRL",
@@ -633,6 +640,7 @@ function getCheckout() {
 
 //Função do evento add payment info
 function getAddPaymentInfo(paymentType) {
+    window.dataLayer.push({ ecommerce: null });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'add_payment_info',
@@ -682,6 +690,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //Função do evento add shipping info
 function getAddShippingInfo() {
+    window.dataLayer.push({ ecommerce: null });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'add_shipping_info',
@@ -737,6 +746,7 @@ function getAddShippingInfo() {
 
 //Função do evento purchase
 function getPurchase(){
+    window.dataLayer.push({ ecommerce: null });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'purchase',
@@ -859,6 +869,7 @@ function getSelectPromotion(){
 }
 
 function getAddWishlist(){
+    window.dataLayer.push({ ecommerce: null });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'add_to_wishlist',
@@ -879,6 +890,7 @@ function getAddWishlist(){
 }
 
 function getRemoveWishlist(){
+    window.dataLayer.push({ ecommerce: null });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'remove_from_wishlist',
