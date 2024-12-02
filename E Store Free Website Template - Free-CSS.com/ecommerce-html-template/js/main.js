@@ -494,7 +494,7 @@ function getAddCart() {
                     item_id: "sku_12345",
                     item_name: "Product name",
                     item_category: "clothes",
-                    price: 100.00,
+                    price: 99.00,
                     quantity: 1,
                     item_variant: "color:black:s"
                 }
