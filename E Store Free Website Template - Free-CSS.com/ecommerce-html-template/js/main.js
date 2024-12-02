@@ -505,7 +505,6 @@ function getAddCart() {
 
 //Função do evento remove from cart
 function getRemoveCart() {
-    window.dataLayer = [];
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'remove_from_cart',
