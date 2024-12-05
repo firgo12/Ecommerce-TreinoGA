@@ -237,22 +237,47 @@
     });
 })(jQuery);
 
-//Parâmetros padrões
+// Função para gerar um ID único usando UUID (para garantir unicidade global)
+function gerarIdUnico() {
+    return crypto.randomUUID(); // Utiliza a API nativa do navegador para gerar um UUID único
+}
+
+// Função para salvar o ID no localStorage e no cookie
+function salvarIdUnico(id) {
+    localStorage.setItem('userId', id); // Armazena no localStorage
+    document.cookie = `userId=${id}; path=/; max-age=2592000`; // Armazena no cookie com expiração de 30 dias
+}
+
+// Função para obter o ID armazenado (preferencialmente do localStorage)
+function obterIdUnico() {
+    return localStorage.getItem('userId') || obterCookieIdUnico();
+}
+
+// Função para obter o ID do cookie, se existir
+function obterCookieIdUnico() {
+    const match = document.cookie.match(/(^| )userId=([^;]+)/);
+    return match ? match[2] : null;
+}
+
+// Função principal para definir os parâmetros
 function getDefaultParams() {
+    let valor;
 
-    do {
-        // Gerar um valor aleatório com 3 caracteres (letras e números)
-        valor = Math.random().toString(36).substring(2, 5); // 36 base (alfabético + numérico) e pega 3 caracteres após o ponto decimal
-    } while (valoresGerados.has(valor)); // Verifica se o valor já foi gerado
+    // Tenta obter o ID do usuário armazenado
+    valor = obterIdUnico();
 
-    // Adiciona o valor gerado ao conjunto
-    valoresGerados.add(valor);
+    if (!valor) {
+        // Se não houver ID armazenado, gera um novo
+        valor = gerarIdUnico();
+        salvarIdUnico(valor); // Salva o ID gerado no localStorage e no cookie
+    }
 
+    // Envia os dados para o dataLayer (Google Tag Manager ou similar)
     window.data = window.dataLayer || [];
-                window.data.push({
-                    user_logged:  true,
-                    user_id: valor      
-                });
+    window.data.push({
+        user_logged: true,
+        user_id: valor
+    });
 }
 
 //Função do page view 
