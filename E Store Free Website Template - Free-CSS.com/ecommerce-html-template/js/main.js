@@ -296,14 +296,15 @@ const valoresGerados = new Set();
 // Função do evento Sign Up
 function getSignUp() {
     let valor;
-    
-    do {
-        // Gerar um valor aleatório com 3 caracteres (letras e números)
-        valor = Math.random().toString(36).substring(2, 5); // 36 base (alfabético + numérico) e pega 3 caracteres após o ponto decimal
-    } while (valoresGerados.has(valor)); // Verifica se o valor já foi gerado
 
-    // Adiciona o valor gerado ao conjunto
-    valoresGerados.add(valor);
+    // Tenta obter o ID do usuário armazenado
+    valor = obterIdUnico();
+
+    if (!valor) {
+        // Se não houver ID armazenado, gera um novo
+        valor = gerarIdUnico();
+        salvarIdUnico(valor); // Salva o ID gerado no localStorage e no cookie
+    }
 
     window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
@@ -315,14 +316,16 @@ function getSignUp() {
 // Função do evento Log in
 function getLogIn() {
     let valor;
-    
-    do {
-        // Gerar um valor aleatório com 3 caracteres (letras e números)
-        valor = Math.random().toString(36).substring(2, 5); // 36 base (alfabético + numérico) e pega 3 caracteres após o ponto decimal
-    } while (valoresGerados.has(valor)); // Verifica se o valor já foi gerado
 
-    // Adiciona o valor gerado ao conjunto
-    valoresGerados.add(valor);
+    // Tenta obter o ID do usuário armazenado
+    valor = obterIdUnico();
+
+    if (!valor) {
+        // Se não houver ID armazenado, gera um novo
+        valor = gerarIdUnico();
+        salvarIdUnico(valor); // Salva o ID gerado no localStorage e no cookie
+    }
+
 
     window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
