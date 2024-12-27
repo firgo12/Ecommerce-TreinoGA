@@ -361,7 +361,7 @@ function getViewItemList() {
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
-                    item_name: "product_1",
+                    item_name: "Blusa Apple",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -369,7 +369,7 @@ function getViewItemList() {
                 },
                 {
                     item_id: "sku_12346",
-                    item_name: "product_2",
+                    item_name: "Vestido Chique",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -377,7 +377,7 @@ function getViewItemList() {
                 },
                 {
                     item_id: "sku_12347",
-                    item_name: "product_3",
+                    item_name: "Jeans Okay",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -385,7 +385,7 @@ function getViewItemList() {
                 },
                 {
                     item_id: "sku_12348",
-                    item_name: "product_4",
+                    item_name: "Terno Elegante",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -393,7 +393,7 @@ function getViewItemList() {
                 },
                 {
                     item_id: "sku_12349",
-                    item_name: "product_5",
+                    item_name: "Vestido Simples",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -401,7 +401,7 @@ function getViewItemList() {
                 },
                 {
                     item_id: "sku_12350",
-                    item_name: "product_6",
+                    item_name: "Blusa Gamer",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -409,7 +409,7 @@ function getViewItemList() {
                 },
                 {
                     item_id: "sku_12351",
-                    item_name: "product_7",
+                    item_name: "Pijama Aconchegante",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -417,7 +417,7 @@ function getViewItemList() {
                 },
                 {
                     item_id: "sku_12352",
-                    item_name: "product_8",
+                    item_name: "Cachecol Lindo",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -425,7 +425,7 @@ function getViewItemList() {
                 },
                 {
                     item_id: "sku_12353",
-                    item_name: "product_9",
+                    item_name: "Jaqueta Maneira",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -446,7 +446,7 @@ function getViewItemListWishlist() {
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
-                    item_name: "product_1",
+                    item_name: "Blusa Apple",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -454,7 +454,7 @@ function getViewItemListWishlist() {
                 },
                 {
                     item_id: "sku_12346",
-                    item_name: "product_2",
+                    item_name: "Vestido Chique",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -462,7 +462,7 @@ function getViewItemListWishlist() {
                 },
                 {
                     item_id: "sku_12347",
-                    item_name: "product_3",
+                    item_name: "Jeans Okay",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -470,7 +470,7 @@ function getViewItemListWishlist() {
                 },
                 {
                     item_id: "sku_12348",
-                    item_name: "product_4",
+                    item_name: "Terno Elegante",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -478,7 +478,7 @@ function getViewItemListWishlist() {
                 },
                 {
                     item_id: "sku_12349",
-                    item_name: "product_5",
+                    item_name: "Vestido Simples",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -524,7 +524,7 @@ function getAddCart() {
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
-                    item_name: "Product name",
+                    item_name: "Blusa Apple",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -546,7 +546,7 @@ function getRemoveCart() {
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
-                    item_name: "Product name",
+                    item_name: "Blusa Apple",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -568,7 +568,7 @@ function getViewCart() {
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
-                    item_name: "product_1",
+                    item_name: "Blusa Apple",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -576,7 +576,7 @@ function getViewCart() {
                 },
                 {
                     item_id: "sku_12346",
-                    item_name: "product_2",
+                    item_name: "Vestido Chique",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -584,7 +584,7 @@ function getViewCart() {
                 },
                 {
                     item_id: "sku_12347",
-                    item_name: "product_3",
+                    item_name: "Jeans Okay",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -592,7 +592,7 @@ function getViewCart() {
                 },
                 {
                     item_id: "sku_12348",
-                    item_name: "product_4",
+                    item_name: "Terno Elegante",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -600,7 +600,7 @@ function getViewCart() {
                 },
                 {
                     item_id: "sku_12349",
-                    item_name: "product_5",
+                    item_name: "Vestido Simples",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -623,7 +623,7 @@ function getCheckout() {
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
-                    item_name: "product_1",
+                    item_name: "Blusa Apple",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -631,7 +631,7 @@ function getCheckout() {
                 },
                 {
                     item_id: "sku_12346",
-                    item_name: "product_2",
+                    item_name: "Vestido Chique",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -639,7 +639,7 @@ function getCheckout() {
                 },
                 {
                     item_id: "sku_12347",
-                    item_name: "product_3",
+                    item_name: "Jeans Okay",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -647,7 +647,7 @@ function getCheckout() {
                 },
                 {
                     item_id: "sku_12348",
-                    item_name: "product_4",
+                    item_name: "Terno Elegante",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -655,7 +655,7 @@ function getCheckout() {
                 },
                 {
                     item_id: "sku_12349",
-                    item_name: "product_5",
+                    item_name: "Vestido Simples",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -680,7 +680,7 @@ function getAddPaymentInfo(paymentType) {
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
-                    item_name: "Product name",
+                    item_name: "Blusa Apple",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -729,7 +729,7 @@ function getAddShippingInfo() {
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
-                    item_name: "product_1",
+                    item_name: "Blusa Apple",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -737,7 +737,7 @@ function getAddShippingInfo() {
                 },
                 {
                     item_id: "sku_12346",
-                    item_name: "product_2",
+                    item_name: "Vestido Chique",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -745,7 +745,7 @@ function getAddShippingInfo() {
                 },
                 {
                     item_id: "sku_12347",
-                    item_name: "product_3",
+                    item_name: "Jeans Okay",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -753,7 +753,7 @@ function getAddShippingInfo() {
                 },
                 {
                     item_id: "sku_12348",
-                    item_name: "product_4",
+                    item_name: "Terno Elegante",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -761,7 +761,7 @@ function getAddShippingInfo() {
                 },
                 {
                     item_id: "sku_12349",
-                    item_name: "product_5",
+                    item_name: "Vestido Simples",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -785,7 +785,7 @@ function getPurchase(){
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
-                    item_name: "product_1",
+                    item_name: "Blusa Apple",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -793,7 +793,7 @@ function getPurchase(){
                 },
                 {
                     item_id: "sku_12346",
-                    item_name: "product_2",
+                    item_name: "Vestido Chique",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -801,7 +801,7 @@ function getPurchase(){
                 },
                 {
                     item_id: "sku_12347",
-                    item_name: "product_3",
+                    item_name: "Jeans Okay",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -809,7 +809,7 @@ function getPurchase(){
                 },
                 {
                     item_id: "sku_12348",
-                    item_name: "product_4",
+                    item_name: "Terno Elegante",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -817,7 +817,7 @@ function getPurchase(){
                 },
                 {
                     item_id: "sku_12349",
-                    item_name: "product_5",
+                    item_name: "Vestido Simples",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -906,7 +906,7 @@ function getAddWishlist(){
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
-                    item_name: "product_1",
+                    item_name: "Blusa Apple",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
@@ -927,7 +927,7 @@ function getRemoveWishlist(){
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
-                    item_name: "product_1",
+                    item_name: "Blusa Apple",
                     item_category: "clothes",
                     price: 99.00,
                     quantity: 1,
