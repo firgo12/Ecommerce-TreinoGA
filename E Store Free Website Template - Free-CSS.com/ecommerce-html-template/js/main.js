@@ -1,6 +1,6 @@
 (function ($) {
     "use strict";
-    
+
     // Dropdown on mouse hover
     $(document).ready(function () {
         function toggleNavbarMethod() {
@@ -17,8 +17,8 @@
         toggleNavbarMethod();
         $(window).resize(toggleNavbarMethod);
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -28,11 +28,13 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({
+            scrollTop: 0
+        }, 1500, 'easeInOutExpo');
         return false;
     });
-    
-    
+
+
     // Header slider
     $('.header-slider').slick({
         autoplay: true,
@@ -41,8 +43,8 @@
         slidesToShow: 1,
         slidesToScroll: 1
     });
-    
-    
+
+
     // Product Slider 4 Column
     $('.product-slider-4').slick({
         autoplay: true,
@@ -50,8 +52,7 @@
         dots: false,
         slidesToShow: 4,
         slidesToScroll: 1,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 4,
@@ -77,8 +78,8 @@
             },
         ]
     });
-    
-    
+
+
     // Product Slider 3 Column
     $('.product-slider-3').slick({
         autoplay: true,
@@ -86,8 +87,7 @@
         dots: false,
         slidesToShow: 3,
         slidesToScroll: 1,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 3,
@@ -107,8 +107,8 @@
             },
         ]
     });
-    
-    
+
+
     // Product Detail Slider
     $('.product-slider-single').slick({
         infinite: true,
@@ -127,8 +127,8 @@
         focusOnSelect: true,
         asNavFor: '.product-slider-single'
     });
-    
-    
+
+
     // Brand Slider
     $('.brand-slider').slick({
         speed: 5000,
@@ -143,8 +143,7 @@
         focusOnSelect: false,
         arrows: false,
         dots: false,
-        responsive: [
-            {
+        responsive: [{
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 4,
@@ -170,8 +169,8 @@
             }
         ]
     });
-    
-    
+
+
     // Review slider
     $('.review-slider').slick({
         autoplay: true,
@@ -179,17 +178,15 @@
         infinite: true,
         slidesToShow: 2,
         slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                }
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1,
             }
-        ]
+        }]
     });
-    
-    
+
+
     // Widget slider
     $('.sidebar-slider').slick({
         autoplay: true,
@@ -198,8 +195,8 @@
         slidesToShow: 1,
         slidesToScroll: 1
     });
-    
-    
+
+
     // Quantity
     $('.qty button').on('click', function () {
         var $button = $(this);
@@ -215,18 +212,18 @@
         }
         $button.parent().find('input').val(newVal);
     });
-    
-    
+
+
     // Shipping address show hide
     $('.checkout #shipto').change(function () {
-        if($(this).is(':checked')) {
+        if ($(this).is(':checked')) {
             $('.checkout .shipping-address').slideDown();
         } else {
             $('.checkout .shipping-address').slideUp();
         }
     });
-    
-    
+
+
     // Payment methods show hide
     $('.checkout .payment-method .custom-control-input').change(function () {
         if ($(this).prop('checked')) {
@@ -283,11 +280,11 @@ function getDefaultParams() {
 //Função do page view 
 function getPageView() {
     window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-            event: 'page_view',
-            page_title:  document.body.getAttribute('gtmName'),
-            page_location: document.body.getAttribute('gtmLocation')       
-        });
+    window.dataLayer.push({
+        event: 'page_view',
+        page_title: document.body.getAttribute('gtmName'),
+        page_location: document.body.getAttribute('gtmLocation')
+    });
 }
 
 // Conjunto para armazenar os valores únicos gerados
@@ -307,10 +304,10 @@ function getSignUp() {
     }
 
     window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-            event: 'sign_up',
-            user_id: valor,       
-        });
+    window.dataLayer.push({
+        event: 'sign_up',
+        user_id: valor,
+    });
 }
 
 // Função do evento Log in
@@ -328,10 +325,10 @@ function getLogIn() {
 
 
     window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-            event: 'login',
-            user_id: valor,       
-        });
+    window.dataLayer.push({
+        event: 'login',
+        user_id: valor,
+    });
 }
 
 // Função do evento Select Content
@@ -343,8 +340,8 @@ function getSelectContent(element) {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'select_content',
-        ev_action:  gtmEvAction,
-        ev_label: gtmEvLabel     
+        ev_action: gtmEvAction,
+        ev_label: gtmEvLabel
     });
 }
 
@@ -352,7 +349,9 @@ function getSelectContent(element) {
 
 // Função do evento view Item List
 function getViewItemList() {
-    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+        ecommerce: null
+    });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: "view_item_list",
@@ -437,7 +436,9 @@ function getViewItemList() {
 }
 
 function getViewItemListWishlist() {
-    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+        ecommerce: null
+    });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: "view_item_list",
@@ -493,7 +494,9 @@ function getViewItemListWishlist() {
 function getViewItem() {
     let name = document.getElementById('productName').querySelector('h2').textContent;
 
-    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+        ecommerce: null
+    });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'view_item',
@@ -501,21 +504,22 @@ function getViewItem() {
         value: parseFloat(document.body.querySelector('.price p').textContent.trim().split(' ')[0].replace('$', '')),
         ecommerce: {
             items: [{
-                    item_id: "sku_12345",
-                    item_name: name,
-                    item_category: "clothes",
-                    price: parseFloat(document.body.querySelector('.price p').textContent.trim().split(' ')[0].replace('$', '')),
-                    quantity: 1,
-                    item_variant: "color:black:s"
-                }
-            ]
-        }      
+                item_id: "sku_12345",
+                item_name: name,
+                item_category: "clothes",
+                price: parseFloat(document.body.querySelector('.price p').textContent.trim().split(' ')[0].replace('$', '')),
+                quantity: 1,
+                item_variant: "color:black:s"
+            }]
+        }
     });
 }
 
 //Função do evento add to cart
 function getAddCart() {
-    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+        ecommerce: null
+    });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'add_to_cart',
@@ -523,21 +527,22 @@ function getAddCart() {
         value: 99.00,
         ecommerce: {
             items: [{
-                    item_id: "sku_12345",
-                    item_name: "Blusa Apple",
-                    item_category: "clothes",
-                    price: 99.00,
-                    quantity: 1,
-                    item_variant: "color:black:s"
-                }
-            ]
-        }      
+                item_id: "sku_12345",
+                item_name: "Blusa Apple",
+                item_category: "clothes",
+                price: 99.00,
+                quantity: 1,
+                item_variant: "color:black:s"
+            }]
+        }
     });
 }
 
 //Função do evento remove from cart
 function getRemoveCart() {
-    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+        ecommerce: null
+    });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'remove_from_cart',
@@ -545,21 +550,22 @@ function getRemoveCart() {
         value: 99.00,
         ecommerce: {
             items: [{
-                    item_id: "sku_12345",
-                    item_name: "Blusa Apple",
-                    item_category: "clothes",
-                    price: 99.00,
-                    quantity: 1,
-                    item_variant: "color:black:s"
-                }
-            ]
-        }      
+                item_id: "sku_12345",
+                item_name: "Blusa Apple",
+                item_category: "clothes",
+                price: 99.00,
+                quantity: 1,
+                item_variant: "color:black:s"
+            }]
+        }
     });
 }
 
 //Função do evento view cart
 function getViewCart() {
-    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+        ecommerce: null
+    });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: "view_cart",
@@ -614,12 +620,13 @@ function getViewCart() {
 //Função do evento checkout
 function getCheckout() {
     window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+        ecommerce: null
+    });
     window.dataLayer.push({
         event: "begin_checkout",
         currency: "BRL",
         value: 495.00,
-        payment_type: "Paypal",
         ecommerce: {
             items: [{
                     item_id: "sku_12345",
@@ -668,7 +675,9 @@ function getCheckout() {
 
 //Função do evento add payment info
 function getAddPaymentInfo(paymentType) {
-    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+        ecommerce: null
+    });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'add_payment_info',
@@ -679,31 +688,30 @@ function getAddPaymentInfo(paymentType) {
         payment_type: paymentType,
         ecommerce: {
             items: [{
-                    item_id: "sku_12345",
-                    item_name: "Blusa Apple",
-                    item_category: "clothes",
-                    price: 99.00,
-                    quantity: 1,
-                    item_variant: "color:black:s"
-                }
-            ]
-        }      
+                item_id: "sku_12345",
+                item_name: "Blusa Apple",
+                item_category: "clothes",
+                price: 99.00,
+                quantity: 1,
+                item_variant: "color:black:s"
+            }]
+        }
     });
 }
 
 let payment;
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Seleciona todos os inputs do tipo radio dentro da classe payment-methods
     const paymentInputs = document.querySelectorAll('.payment-methods .custom-control-input');
-    
+
     // Adiciona um evento de clique para cada input
-    paymentInputs.forEach(function(input) {
-        input.addEventListener('click', function() {
-            
+    paymentInputs.forEach(function (input) {
+        input.addEventListener('click', function () {
+
             // Captura o valor do atributo gtmName
             let paymentType = input.getAttribute('gtmName');
-            
+
             // Verifica se o atributo gtmName está presente
             if (paymentType) {
                 payment = paymentType
@@ -718,7 +726,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //Função do evento add shipping info
 function getAddShippingInfo() {
-    window.dataLayer.push({ ecommerce: null });
+    window.dataLayer.push({
+        ecommerce: null
+    });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'add_shipping_info',
@@ -773,8 +783,10 @@ function getAddShippingInfo() {
 }
 
 //Função do evento purchase
-function getPurchase(){
-    window.dataLayer.push({ ecommerce: null });
+function getPurchase() {
+    window.dataLayer.push({
+        ecommerce: null
+    });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'purchase',
@@ -831,19 +843,35 @@ function getPurchase(){
 
 const btnOrder = document.getElementById('btn-order');
 const checkbox = document.getElementById('newaccount');
+const popup = document.getElementById("popup");
+const overlay = document.getElementById("overlay");
 
-btnOrder.addEventListener('click', function(event) {
-    
+btnOrder.addEventListener('click', function (event) {
+
     getAddPaymentInfo(payment);
     getAddShippingInfo();
 
-    if(payment != undefined){
+    event
+        .preventDefault(); // Impede o comportamento padrão do link (não recarregar a página)
+
+    if (payment != undefined) {
         getPurchase();
     }
 
-    if(checkbox.checked){
+    if (checkbox.checked) {
         getSignUp();
     }
+
+    // Exibindo o pop-up e o overlay
+    popup.style.display = "block";
+    overlay.style.display = "block";
+
+    // Após 5 segundos, redireciona para a página "home"
+    setTimeout(function () {
+        window.location.href =
+            'index.html'; // Altere para o path correto da sua página inicial
+    }, 10000); // 10000 milissegundos = 10 segundos
+
 });
 
 //Função do evento pesquisa (GERAL)
@@ -853,8 +881,8 @@ function getSearch() {
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'search',
-        search_term:  searchTerm,
-        search_type: '',     
+        search_term: searchTerm,
+        search_type: '',
         search_price: ''
     });
 
@@ -862,78 +890,80 @@ function getSearch() {
 //Função do evento pesquisa (GERAL)
 function getSearch2() {
     var searchTerm = document.getElementById("searchInput2").value;
-    
-    var shortBy = document.querySelector('.product-short .dropdown-menu .active')?.textContent || '';
-    
-    var priceRange = document.querySelector('.product-price-range .dropdown-menu .active')?.textContent || '';
+
+    var shortBy = document.querySelector('.product-short .dropdown-menu .active') ?.textContent || '';
+
+    var priceRange = document.querySelector('.product-price-range .dropdown-menu .active') ?.textContent || '';
 
     if (priceRange !== '') {
         // Remove o símbolo '$' e divide o valor em duas partes (min e max)
         var priceRangeCleaned = priceRange.replace('$', '').split(' to ');
-    
+
         // Extrai o primeiro número (minPrice) e converte para Number
         var minPrice = Number(priceRangeCleaned[0]);
-    
-    } 
+
+    }
 
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'search',
-        search_term:  searchTerm,
-        search_type: shortBy,     
+        search_term: searchTerm,
+        search_type: shortBy,
         search_price: minPrice
     });
 }
 
-function getSelectPromotion(){
+function getSelectPromotion() {
     var coupon = document.getElementById("coupon").value;
 
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'select_promotion',
-        promotion_name:  coupon,
-        promotion_id: 'CPN123',     
+        promotion_name: coupon,
+        promotion_id: 'CPN123',
     });
 }
 
-function getAddWishlist(){
-    window.dataLayer.push({ ecommerce: null });
+function getAddWishlist() {
+    window.dataLayer.push({
+        ecommerce: null
+    });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'add_to_wishlist',
         currency: 'BRL',
-        value: 99.00,    
+        value: 99.00,
         ecommerce: {
             items: [{
-                    item_id: "sku_12345",
-                    item_name: "Blusa Apple",
-                    item_category: "clothes",
-                    price: 99.00,
-                    quantity: 1,
-                    item_variant: ""
-                }
-            ]
-        } 
+                item_id: "sku_12345",
+                item_name: "Blusa Apple",
+                item_category: "clothes",
+                price: 99.00,
+                quantity: 1,
+                item_variant: ""
+            }]
+        }
     });
 }
 
-function getRemoveWishlist(){
-    window.dataLayer.push({ ecommerce: null });
+function getRemoveWishlist() {
+    window.dataLayer.push({
+        ecommerce: null
+    });
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({
         event: 'remove_from_wishlist',
         currency: 'BRL',
-        value: 99.00,    
+        value: 99.00,
         ecommerce: {
             items: [{
-                    item_id: "sku_12345",
-                    item_name: "Blusa Apple",
-                    item_category: "clothes",
-                    price: 99.00,
-                    quantity: 1,
-                    item_variant: ""
-                }
-            ]
-        } 
+                item_id: "sku_12345",
+                item_name: "Blusa Apple",
+                item_category: "clothes",
+                price: 99.00,
+                quantity: 1,
+                item_variant: ""
+            }]
+        }
     });
 }

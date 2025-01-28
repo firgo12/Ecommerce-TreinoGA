@@ -78,13 +78,13 @@
                             </div>
                         </div>
                         <div class="navbar-nav ml-auto">
-                            <div class="nav-item dropdown">
+                            <!-- <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Account</a>
                                 <div class="dropdown-menu">
                                     <a href="#" class="dropdown-item">Login</a>
                                     <a href="#" class="dropdown-item">Register</a>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </nav>
@@ -269,8 +269,15 @@
                                             <h2>Grand Total<span>$100</span></h2>
                                         </div>
                                         <div class="cart-btn">
+
+                                            <script>
+                                                function pageCheckout() {
+                                                    window.location.href = 'checkout.html'
+                                                }
+                                            </script>
+
                                             <button>Update Cart</button>
-                                            <button>Checkout</button>
+                                            <button onclick="pageCheckout()">Checkout</button>
                                         </div>
                                     </div>
                                 </div>
